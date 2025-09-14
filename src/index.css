@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+:root{
+  --primary: rgb(48,67,40);
+  --primaryLight: #c0c86d;
+  --card-bg: #1e1e1e;
+  --dark-bg: #0b0b0b;
+}
+
+/* small helpers for consistent text sizes */
+body {
+  background: var(--dark-bg);
+  color: #e6e6e6;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* make anchor underline animations consistent on desktop nav links */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #6b8e23, #c0c86d);
+  transition: width .25s ease;
+}
+.nav-link:hover::after { width:100%; }
+
+.bg-radial-gradient {
+  background: radial-gradient(circle at 20% 50%, rgba(107,142,35,0.1) 0%, transparent 50%),
+              radial-gradient(circle at 80% 80%, rgba(192,200,109,0.1) 0%, transparent 50%);
+}
+
+/* Swiper navigation buttons styling */
+.swiper-button-prev,
+.swiper-button-next {
+  color: #84cc16; /* lime-400 */
+  top: 50% !important;
+  transform: translateY(-50%);
+  font-size: 28px !important;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.swiper-button-prev {
+  left: -3rem; /* thoda bahar */
+}
+
+.swiper-button-next {
+  right: -3rem; /* thoda bahar */
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  color: #a3e635; /* hover pe thoda bright lime */
+}
