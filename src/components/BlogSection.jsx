@@ -1,24 +1,5 @@
-
 import React from "react";
-
-const blogs = [
-  {
-    id: 23,
-    title: "Innovating Across Industries with Dousoft Universe",
-    image: "src/assets/Home/Blog.png",
-  },
-  {
-    id: 24,
-    title: "AI-Driven Innovation for the Future",
-    image:
-      "src/assets/Home/Blog2.jpg",
-  },
-  {
-    id: 25,
-    title: "The Future of Digital Marketing in 2025",
-    image: "src/assets/Home/Blog3.webp",
-  },
-];
+import blogs from "../data/blogs"; // import from data file
 
 export default function BlogSection() {
   return (
@@ -28,8 +9,7 @@ export default function BlogSection() {
           Blog & News
         </h2>
         <p className="text-gray-400">
-          Explore our latest insights, updates, and stories from the digital
-          world.
+          Explore our latest insights, updates, and stories from the digital world.
         </p>
       </div>
 
@@ -50,7 +30,7 @@ export default function BlogSection() {
                 {blog.title}
               </h3>
               <a
-                href={blog.link}
+                href={blog.link || "#"}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-lime-400 hover:text-lime-500 font-medium"

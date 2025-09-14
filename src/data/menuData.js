@@ -3,20 +3,28 @@
 export const products = [
   {
     category: "IT Solutions",
-    items: ["AV App", "ShareFile", "PDF Generator"],
+    items: ["AV App", "ShareFile", "PDF Generator", "Parental Control"],
   },
   {
     category: "Education",
-    items: ["LMS Platform", "E-learning"],
+    items: ["LMS Platform", "E-learning", "Student CRM", "Digital Libraries"],
   },
   {
     category: "SaaS Tools",
-    items: ["CRM / ERM Solutions", "WhatsApp API"],
+    items: ["CRM Solutions", "ERM Solutions", "WhatsApp API", "Automation Tools"],
   },
   {
     category: "Ecommerce",
     items: ["Fashion", "Jewellery", "Store"],
   },
+];
+
+export const subsidiaries = [
+  "Dousoft IT Solution Pvt Ltd",
+  "Dousoft Eduverse",
+  "Dousoft Store",
+  "Dousoft Fashion",
+  "Dousoft Jewellery",
 ];
 
 export const industries = [
@@ -28,12 +36,4 @@ export const industries = [
   "Education",
   "Healthcare",
   "Automotive",
-];
-
-export const subsidiaries = [
-  "Dousoft IT Solution Pvt Ltd",
-  "Dousoft Eduverse",
-  "Dousoft Store",
-  "Dousoft Fashion",
-  "Dousoft Jewellery",
 ];
